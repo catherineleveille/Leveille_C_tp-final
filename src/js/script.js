@@ -49,6 +49,7 @@ class MovieDB{
             console.log(data[i].title);
             console.log(data[i].overview);
         }
+        //début cours tp final partie 2
     }
 
 }
