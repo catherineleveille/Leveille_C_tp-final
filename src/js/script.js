@@ -41,15 +41,7 @@ class MovieDB{
         //sert à rendre le text plus lisible
         console.log(data);
 
-        this.afficheDernierFilm(data);
-    }
-    afficheDernierFilm(data){
 
-        for (let i = 0; i < data.length; i++) {
-            console.log(data[i].title);
-            console.log(data[i].overview);
-        }
-        //début cours tp final partie 2
     }
 
 }
