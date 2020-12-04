@@ -89,10 +89,12 @@ afficheInfoFilm(data){
     document.querySelector("h1").innerHTML=data.title;
     document.querySelector("p.revenu").innerHTML=data.revenu;
 
+    this.requeteActeur(data)
+
 
     }
 
-    requeteActeur(movieDB){
+    requeteActeur(movieId){
       //get credits
     }
     retourRequeteActeur(e){
