@@ -1,21 +1,23 @@
-
+//---------------------------------- swiper general------------------------------------------------//
 .swiper-container {
   display: flex;
   width: 100%;
   height: 100%;
 
 }
-
+//----------------------------------chaque page de swiper------------------------------------------------//
 .swiper-slide {
   text-align: center;
   background: var(--color-bg-primary);
-  img{
-
+  //------text swiper-------//
+  .informations-film-slider {
+    border: 20px double #FFE093;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px white, 0 0 60px yellow, 0 0 10px darkgoldenrod;
   }
-
   h2 a {
     color: var(--color-text-primary);
-    padding: 16px 32px;
+
     opacity: 0.8;
     transition: 0.3s;
   }
@@ -26,6 +28,7 @@
     transition: 0.3s;
 
 }
+  //-----text swiper hover-----//
   h2 a:hover {
    opacity: 1;
   }
@@ -35,14 +38,25 @@
   }
 }
 
-.informations-film-slider {
-  border: 20px double #FFE093;
-  border-radius: 10px;
+//----------------------------------media query------------------------------------------------//
+@media screen and (max-width: 596px){
+  .swiper-container {
+    display: flex;
+    width: 75%;
+    height: 75%;
 
-
-  text-shadow: 1px 1px 2px white, 0 0 60px yellow, 0 0 10px darkgoldenrod;
-}
-
-.swiper-button-next {
-
+  }
+  .informations-film-slider {
+    border: 10px solid #FFE093;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px white, 0 0 60px yellow, 0 0 10px darkgoldenrod;
+  }
+  h2{
+    margin: 0;
+    font-size: 16px;
+  }
+  h3{
+    margin: 0;
+    font-size: 16px;
+  }
 }

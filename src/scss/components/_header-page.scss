@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
 
   position: relative;
   z-index: 200;
@@ -18,7 +17,7 @@
 .menu-principal{
 
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 30px;
   justify-items: center;
 
   position: relative;
@@ -26,9 +25,9 @@
   z-index: 100;
 
   list-style-type: none;
-  padding: 0 20px 0 0;
-  margin-right: 500px;
-  margin-left: 500px;
+  padding: 0;
+
+  width: 100%;
 
 
   transition: top 0.4s ease-in-out;
@@ -42,12 +41,30 @@
 
 
 .menu-principal a {
-  font-size: 22px;
-  color: #000;
-  background-color: #FFFFFF;
+
+  font-size: 1.375rem;
+  color: var(--color-text-secondary);
+  border: 10px solid #fff;
+  border-radius: 10px;
+  background-color: var(--color-white);
+
 }
 
 .menu-principal a:hover {
   text-decoration: underline;
   color: var(--color-link-hover);
+}
+
+@media screen and(max-width: 395px){
+  .menu-principal{
+
+    display: grid;
+    grid-gap: 10px;
+    justify-items: center;
+
+    width: 100%;
+    height: 200px;
+
+  }
+
 }

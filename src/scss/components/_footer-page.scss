@@ -1,7 +1,9 @@
+//----------------------------------general------------------------------------------------//
+
 footer{
   display: flex;
  justify-content: center;
-  align-items: center;
+ justify-content: center;
   img{
     width: 50%;
     height: 50%;
@@ -12,11 +14,11 @@ footer{
   align-items: center;
   h3{
 text-align: center;
-
   }
 }
 
-//le bouton scroll
+
+//----------------------------------le btn scroll------------------------------------------------//
 
 #btnScrollToTop{
   position: fixed;
@@ -37,7 +39,7 @@ text-align: center;
 }
 
 
-
+//----------------------------------media query------------------------------------------------//
 
 @media screen and (max-width:768px ) {
   #btnScrollToTop {
