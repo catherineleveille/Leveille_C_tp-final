@@ -15,9 +15,10 @@
 
   /// Font family
 
-  --ff-normal: 'Prompt', sans-serif;
-  --ff-title-primary: 'Anton', sans-serif;
-  --ff-title-secondary: 'Sansita Swashed', cursive;
+  --ff-normal: 'Alata', sans-serif;
+  --ff-title-primary: 'Poller One', sans-serif;
+  $ff-normal: 'Roboto', Helvetica, Arial, sans-serif;
+  $ff-title: 'Roboto', Helvetica, Arial, sans-serif;
 
   /// Hauteur de ligne
   --lh-extra-thin: 1;
@@ -67,8 +68,7 @@
 //
 ///// Font family
 //
-//$ff-normal: 'Roboto', Helvetica, Arial, sans-serif;
-//$ff-title: 'Roboto', Helvetica, Arial, sans-serif;
+
 //
 ///// Fonts weight
 //$fw-thin: 100;

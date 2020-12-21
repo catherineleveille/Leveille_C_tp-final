@@ -9,11 +9,34 @@
 
     <script src="js/script.js" defer></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Poller+One&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 
 </head>
 <body>
+<header class="header-page row-menu">
+
+
+    <nav class="main-nav">
+        <div class="titre-menu">TimFlix</div>
+        <ul class="menu-principal">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Nous contacter</a></li>
+            <li><a href="index.html">Mon profil</a></li>
+        </ul>
+    </nav>
+</header>
+
 
 <div class="template">
+
     <article class="film">
         <h2>Titre du film (à modifier)</h2>
         <img src="images/image-temp.jpg" alt="Texte de l'image (à modifier)">
@@ -25,22 +48,66 @@
 
 <div class="wrapper">
 
-    <div class="carrousel">
+    <div class="swiper-container">
 
-        <div>
-            <img src="images/image-temp.jpg" alt="Texte de l'image (à modifier)">
-            <h2>Titre du film (à modifier)</h2>
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <img src="images/croods.jpg" alt="Les croods">
+            <div class="informations-film-slider">
+            <h2>Les Croods 2 : Une nouvelle ère</h2>
+            <h3>81%</h3>
+            </div>
         </div>
 
-        <div>
+        <div class="swiper-slide">
             <img src="images/image-temp.jpg" alt="Texte de l'image (à modifier)">
-            <h2>Titre du film (à modifier)</h2>
+            <h2>Wander</h2>
+            <h3>81%</h3>
         </div>
 
-        <div>
+        <div class="swiper-slide">
             <img src="images/image-temp.jpg" alt="Texte de l'image (à modifier)">
-            <h2>Titre du film (à modifier)</h2>
+            <h2>The Good Criminal</h2>
+            <h3>81%</h3>
         </div>
+
+        <div class="swiper-slide">
+            <img src="images/image-temp.jpg" alt="Texte de l'image (à modifier)">
+            <div class="informations-film-slider">
+            <h2>Jiu Jitsu</h2>
+            <h3>81%</h3>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="images/image-temp.jpg" alt="Texte de l'image (à modifier)">
+            <h2>Tenet</h2>
+            <h3>81%</h3>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/image-temp.jpg" alt="Texte de l'image (à modifier)">
+            <h2>Un très mauvais plan</h2>
+            <h3>81%</h3>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/image-temp.jpg" alt="Texte de l'image (à modifier)">
+            <h2>Fatman</h2>
+            <h3>81%</h3>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/image-temp.jpg" alt="Texte de l'image (à modifier)">
+            <h2>Wonder Woman 1984</h2>
+            <h3>81%</h3>
+        </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+
+
 
     </div>
 
@@ -98,6 +165,15 @@
         </article>-->
 
     </section>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
 </div>
 

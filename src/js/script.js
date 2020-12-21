@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     let connexion = new MovieDB();
 
     if (document.location.pathname.search("fiche-film.html")>0) {
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-class MovieDB{
+class MovieDB {
 
     constructor() {
         console.log("constructeur");
@@ -75,38 +76,39 @@ class MovieDB{
         }
     }
 
-requeteInfoFilm(movieId){
-    let xhr = new XMLHttpRequest();
-    xhr.addEventListener("loadend", this.retourRequeteInfoFilm.bind(this));
+    requeteInfoFilm(movieId) {
+        let xhr = new XMLHttpRequest();
+        xhr.addEventListener("loadend", this.retourRequeteInfoFilm.bind(this));
 
-    //requete.open("GET","https://api.themoviedb.org/3/movie/now_playing?api_key=8ec3413c6e72c2abaf8cc8645163e2b6&language=fr-CA&page=1");
-    xhr.open("GET", this.baseURL + "/movie/"+movieId + "?api_key="+this.APIkey+ "&language=" + this.lang);
-    //initialise la requête pour récupérer les films
+        //requete.open("GET","https://api.themoviedb.org/3/movie/now_playing?api_key=8ec3413c6e72c2abaf8cc8645163e2b6&language=fr-CA&page=1");
+        xhr.open("GET", this.baseURL + "/movie/" + movieId + "?api_key=" + this.APIkey + "&language=" + this.lang);
+        //initialise la requête pour récupérer les films
 
-    xhr.send();
+        xhr.send();
+    }
+
+    afficheInfoFilm(data) {
+        document.querySelector("h1").innerHTML = data.title;
+        document.querySelector("p.revenu").innerHTML = data.revenu;
+
+        this.requeteActeur(data)
+
+
+    }
+
+    requeteActeur(movieId) {
+        //get credits
+    }
+
+    retourRequeteActeur(e) {
+
+    }
+
+    afficheActeur(data) {
+
+    }
+
 }
-afficheInfoFilm(data){
-    document.querySelector("h1").innerHTML=data.title;
-    document.querySelector("p.revenu").innerHTML=data.revenu;
-
-    this.requeteActeur(data)
-
-
-    }
-
-    requeteActeur(movieId){
-      //get credits
-    }
-    retourRequeteActeur(e){
-
-    }
-    afficheActeur(data){
-
-    }
-}
-
-
-
 
 
 

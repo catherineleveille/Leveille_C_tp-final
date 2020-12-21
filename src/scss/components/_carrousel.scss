@@ -1,12 +1,22 @@
-.carrousel{
+
+
+.swiper-container{
   display: flex;
-  justify-content: space-between;
-
-  div{
-    width: calc(33.3333% - 20px);
-
-  }
+  width: 100%;
+  height: 100%;
 
 }
 
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background: var(--color-bg-primary);
+  margin: 20px;
+  h2{
+color: var(--color-text-secondary);
+  }
 
+}
+.informations-film-slider{
+  border: 5px solid #cd201f;
+}

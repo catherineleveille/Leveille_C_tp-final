@@ -1,2 +1,51 @@
 //STYLE DE NOTRE HEADER
 
+.titre-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+
+  position: relative;
+  z-index: 200;
+
+  font-size: 35px;
+  font-family: var(--ff-title-primary);
+
+}
+
+
+.menu-principal{
+  display: grid;
+  grid-gap: 10px;
+  justify-items: center;
+
+  position: relative;
+  top: -400px;
+  z-index: 100;
+
+  list-style-type: none;
+  padding: 0 20px 0 0;
+  margin: 0;
+
+  background: #fff;
+
+  transition: top 0.4s ease-in-out;
+}
+
+.main-nav:hover  .menu-principal {
+  top: 0;
+}
+
+
+
+
+.menu-principal a {
+  font-size: 22px;
+  color: #000;
+}
+
+.menu-principal a:hover {
+  text-decoration: underline;
+  color: var(--color-link-hover);
+}
