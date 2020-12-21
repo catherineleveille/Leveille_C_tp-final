@@ -1,22 +1,48 @@
 
-
-.swiper-container{
+.swiper-container {
   display: flex;
   width: 100%;
   height: 100%;
 
 }
 
-.swiper-slide{
+.swiper-slide {
   text-align: center;
-  font-size: 18px;
   background: var(--color-bg-primary);
-  margin: 20px;
-  h2{
-color: var(--color-text-secondary);
+  img{
+
   }
 
+  h2 a {
+    color: var(--color-text-primary);
+    padding: 16px 32px;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  h3 a{
+  color: var(--color-text-primary);
+    padding: 16px 32px;
+    opacity: 0.8;
+    transition: 0.3s;
+
 }
-.informations-film-slider{
-  border: 5px solid #cd201f;
+  h2 a:hover {
+   opacity: 1;
+  }
+  h3 a:hover{
+    opacity: 1;
+
+  }
+}
+
+.informations-film-slider {
+  border: 20px double #FFE093;
+  border-radius: 10px;
+
+
+  text-shadow: 1px 1px 2px white, 0 0 60px yellow, 0 0 10px darkgoldenrod;
+}
+
+.swiper-button-next {
+
 }

@@ -23,7 +23,7 @@ class MovieDB {
 
         this.imgPath = "https://image.tmdb.org/t/p/";
 
-        this.totalFilm = 8;
+        this.totalFilm = 6;
     }
 
     requeteDernierFilm() {
@@ -108,8 +108,23 @@ class MovieDB {
 
     }
 
+
 }
 
+const btnScrollToTop= document.querySelector("#btnScrollToTop");
+btnScrollToTop.addEventListener("click", function(){
+    window.scrollTo({
+        top:0,
+        left:0,
+        behavior:"smooth"
+    });
+});
+var swiper = new Swiper('.swiper-container', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 
 
