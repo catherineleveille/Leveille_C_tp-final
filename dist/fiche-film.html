@@ -47,39 +47,129 @@
 </div>
 
 <div class="wrapper">
-    <div class="mediasociaux">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
+    <div class="hero">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/?hl=fr" class="fa fa-instagram"></a>
+        <a href="https://www.snapchat.com/" class="fa fa-snapchat"></a>
     </div>
 
+<div class="titre-fiche-film">
+    <h1>Drunk</h1>
+    <h2>2020</h2>
+</div>
     <main class="fiche-film">
-        <h1>Titre du film (à modifier)</h1>
+        <div class="image-principale">
+            <img class="affiche" src="images/drunk.jpg" alt="drunk">
+            <span class="material-icons"><a
+                    href="https://www.youtube.com/watch?v=JsGbO9X-C-8">play_circle_filled</a></span>
+        </div>
 
-        <img class="affiche" src="images/image-temp.jpg" alt="Description de l'image (à modifier)">
+        <div class="swiper-container">
 
-        <p class="description">Une description du film. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illum laborum non.</p>
+            <div class="swiper-wrapper">
 
+                <div class="swiper-slide">
+                    <h2>Les acteurs principaux</h2>
+                    <img src="images/mads.jpg" alt="martin">
+                    <div class="informations-film-slider">
+                        <h2><a href="index.html">Mads Mikkelsen</a></h2>
+                    </div>
+                </div>
 
-        <div class="liste-acteurs">
+                <div class="swiper-slide">
+                    <h2>Les acteurs principaux</h2>
+                    <img src="images/martin.jpg" alt="martin">
+                    <div class="informations-film-slider">
+                        <h2><a href="index.html">Martin Greis-Rosenthal</a></h2>
+                    </div>
+                </div>
 
+                <div class="swiper-slide">
+                    <h2>Les acteurs principaux</h2>
+                    <img src="images/marie.jpg" alt="marie">
+                    <div class="informations-film-slider">
+                        <h2><a href="index.html">Maria Bonnevie</a></h2>
+                    </div>
+                </div>
 
+                <div class="swiper-slide">
+                    <h2>Les acteurs principaux</h2>
+                    <img src="images/susse.jpg" alt="susse">
+                    <div class="informations-film-slider">
+                        <h2><a href="index.html">Susse Wold</a></h2>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <h2>Les acteurs principaux</h2>
+                    <img src="images/thomas.jpg" alt="thomas">
+                    <div class="informations-film-slider">
+                        <h2><a href="index.html">Thomas Bo Larsen</a></h2>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <h2>Les acteurs principaux</h2>
+                    <img src="images/albert.jpg" alt="thomas">
+                    <div class="informations-film-slider">
+                        <h2><a href="index.html"></a>Albert Rudbeck Lindhardt</h2>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
+    <article class="informations">
+        <h3>Synopsis</h3>
+        <p>Quatre amis décident de mettre en pratique la théorie d’un psychologue norvégien selon
+            laquelle l’homme aurait dès la naissance un déficit d’alcool dans le sang. Avec une rigueur scientifique,
+            chacun relève le défi en espérant tous que leur vie n’en sera que meilleure ! Si dans un premier temps les
+            résultats sont encourageants, la situation devient rapidement hors de contrôle.</p>
+    </article>
+    <article class="informations-courtes">
+        <div>
+            <h3><a href="#">Recette</a></h3>
+            <p>25 millions</p>
+        </div>
+        <div>
+            <h3><a href="#">Étoiles</a></h3>
+            <p>4.5</p>
+        </div>
+        <div>
+            <h3><a href="#">Langue</a></h3>
+            <p>Danish</p>
+        </div>
+        <div>
+            <h3><a href="#">Durée</a></h3>
+            <p>117 minutes</p>
+        </div>
+        <div>
+            <h3><a href="#">Budget</a></h3>
+            <p>20 millions</p>
+        </div>
+    </article>
 
+
+    <footer>
+        <div class="text-footer">
+            <h3>TimFlix par Catherine Léveillé</h3>
+            <img src="images/logo_court.svg" alt="">
+        </div>
+        <button id="btnScrollToTop">
+
+            <i class="material-icons">arrow_upward</i>
+        </button>
+
+    </footer>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </div>
-<footer>
-    <div class="text-footer">
-        <h3>TimFlix par Catherine Léveillé</h3>
-        <img src="images/logo_court.svg" alt="">
-    </div>
-    <button id="btnScrollToTop">
-
-        <i class="material-icons">arrow_upward</i>
-    </button>
-
-</footer>
-
 </body>
 </html>
