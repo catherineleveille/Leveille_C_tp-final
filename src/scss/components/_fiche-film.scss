@@ -1,3 +1,5 @@
+//------Titre de la page-------/
+
 .titre-fiche-film{
 display: flex;
   align-items: center;
@@ -11,6 +13,7 @@ display: flex;
   }
 
 }
+//------La fiche avec image et swipper-------/
 .fiche-film {
   display: flex;
   align-content: center;
@@ -31,7 +34,7 @@ display: flex;
       border: 10px solid white;
       box-shadow: 0 0 20px #aaaaaa;
     }
-
+    //------overlay pour voir la bande annonce-------/
     .material-icons {
       position: absolute;
       top: 35%;
@@ -71,6 +74,7 @@ display: flex;
 
   }
 }
+//------informations supplémentaires:synopsis-------/
 .informations{
   display: flex;
   justify-content: center;
@@ -86,6 +90,7 @@ display: flex;
   box-shadow: none;
 
 }
+//------informations supplémentaires:autres-------/
 .informations-courtes{
   display: flex;
   justify-content: center;
